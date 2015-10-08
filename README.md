@@ -34,3 +34,20 @@ Or if you want the container ip (changes on each run and would need update on ea
 ```bash
 docker inspect --format '{{ .NetworkSettings.IPAddress }}' aegir
 ```
+
+## Further Usage
+
+We have created a container and named it "aegir"
+
+You can stop the container or start it with the following commands even after reboot you can start this anytime
+
+```bash
+docker stop aegir
+docker start aegir
+```
+
+To remove the container and all data
+
+```bash
+docker rm aegir
+```
